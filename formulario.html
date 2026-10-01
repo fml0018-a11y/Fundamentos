@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+
+    <h1>Formulario de Contacto</h1>
+
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="formulario.html">formulario</a> |
+        <a href="horario.html">Horario</a>
+    </nav>
+
+    <form action="datos.php" method="post">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre">
+            <br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos">
+            <br><br>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+            <br><br>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" value="18">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Ciudad</legend>
+
+            <label for="ciudad">Selecciona una ciudad:</label>
+
+            <select id="ciudad" name="ciudad">
+                <option>Sevilla</option>
+                <option>Malaga</option>
+                <option>Cadiz</option>
+                <option>Huelva</option>
+                <option>Cordoba</option>
+                <option>Granada</option>
+                <option>Jaen</option>
+                <option>Almeria</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Aficiones</legend>
+
+            <input type="checkbox" id="videojuegos" name="aficiones[]" value="Videojuegos" checked>
+            <label for="videojuegos">Videojuegos</label><br>
+
+            <input type="checkbox" id="musica" name="aficiones[]" value="Música">
+            <label for="musica">Música</label><br>
+
+            <input type="checkbox" id="deporte" name="aficiones[]" value="Deporte">
+            <label for="deporte">Deporte</label><br>
+
+            <input type="checkbox" id="cine" name="aficiones[]" value="Cine">
+            <label for="cine">Cine</label><br>
+
+            <input type="checkbox" id="lectura" name="aficiones[]" value="Lectura">
+            <label for="lectura">Lectura</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Mensaje</legend>
+
+            <label for="mensaje">Escribe tu mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="6" cols="40"></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+    </form>
+
+</body>
+</html>
