@@ -7,6 +7,7 @@ public class Tema3 {
         System.out.println("Dime tu nombre");
         String nombre = sc.nextLine();
         System.out.println("Hola " + nombre);
+        sc.close();
 
     }
 }
