@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Ejercicio3 {
     public static void main(String[] args) {
 
-        Scanner teclado = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Introduce tu edad: ");
-        int edad = teclado.nextInt();
+        int edad = sc.nextInt();
 
         if (edad >= 18 && edad <= 64) {
             System.out.println("Edad de trabajar");
@@ -15,6 +15,6 @@ public class Ejercicio3 {
             System.out.println("Fuera de edad laboral");
         }
 
-        teclado.close();
+        sc.close();
     }
 }

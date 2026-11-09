@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Ejercicio6 {
     public static void main(String[] args) {
 
-        Scanner teclado = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Introduce la nota: ");
-        double nota = teclado.nextDouble();
+        double nota = sc.nextDouble();
 
         if (nota >= 5) {
             System.out.println("Aprobado");
@@ -15,6 +15,6 @@ public class Ejercicio6 {
             System.out.println("Suspenso");
         }
 
-        teclado.close();
+        sc.close();
     }
 }

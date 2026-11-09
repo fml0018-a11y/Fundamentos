@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Ejercicio5 {
     public static void main(String[] args) {
 
-        Scanner teclado = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Introduce la contraseña: ");
-        String contraseña = teclado.nextLine();
+        String contraseña = sc.nextLine();
 
         if (contraseña.equals("java123")) {
             System.out.println("Acceso concedido");
@@ -15,6 +15,6 @@ public class Ejercicio5 {
             System.out.println("Acceso denegado");
         }
 
-        teclado.close();
+        sc.close();
     }
 }
